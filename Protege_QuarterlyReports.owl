@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://adage.cse.unsw.edu.au/ontology/financial-events#"
+     xml:base="http://adage.cse.unsw.edu.au/ontology/financial-events"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/pmanj_000/ontologies/2017/7/untitled-ontology-3#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:AnnotationVocabulary="http://www.omg.org/spec/EDMC-FIBO/FND/Utilities/AnnotationVocabulary/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:SpecificationMetadata="http://www.omg.org/techprocess/ab/SpecificationMetadata/">
+    <owl:Ontology rdf:about="http://adage.cse.unsw.edu.au/ontology/financial-events">
+        <owl:imports rdf:resource="http://www.omg.org/spec/EDMC-FIBO/FND/20170201/DatesAndTimes/BusinessDates/"/>
+    </owl:Ontology>
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+    <!-- http://adage.cse.unsw.edu.au/ontology/financial-events#ActivityDataElement -->
+    <owl:ObjectProperty rdf:about="http://adage.cse.unsw.edu.au/ontology/financial-events#ActivityDataElement">
+        <rdfs:domain rdf:resource="http://adage.cse.unsw.edu.au/ontology/financial-events#Activity"/>
+        <rdfs:range rdf:resource="http://adage.cse.unsw.edu.au/ontology/financial-events#DataElement"/>
+    </owl:ObjectProperty>
+    <!-- http://adage.cse.unsw.edu.au/ontology/financial-events#AnnouncementDate -->
+    <owl:ObjectProperty rdf:about="http://adage.cse.unsw.edu.au/ontology/financial-events#AnnouncementDate">
+        <rdfs:subPropertyOf rdf:resource="http://adage.cse.unsw.edu.au/ontology/financial-events#Eventattribute"/>
